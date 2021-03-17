@@ -1,0 +1,101 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px "\5B8B\4F53", sans-serif;
+    background: url(../images/1_tm_overwatch_media_bg-tablet-a74bf293a3.png) no-repeat center /cover !important;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+table,
+td,
+tr,
+th {
+    font-size: 12px;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+address,
+cite,
+code,
+em,
+th {
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.nav {
+    background-color: #484748;
+    height: 40px;
+}
+
+.w {
+    width: 1600px;
+
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    height: 40px;
+    width: 62px;
+    background-image: url(../image/tubiao.png);
+    background-repeat: no-repeat;
+    background-position: -18px -75px;
+}
+
+.game {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+    background-color: aqua;
+
+}

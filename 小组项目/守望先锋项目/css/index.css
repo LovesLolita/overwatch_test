@@ -1,0 +1,1115 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?rijwn6');
+    src: url('../fonts/icomoon.eot?rijwn6#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?rijwn6') format('truetype'), url('../fonts/icomoon.woff?rijwn6') format('woff'), url('../fonts/icomoon.svg?rijwn6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: url(../images/bg.jpg) no-repeat center /cover !important;
+
+}
+
+/* nav模块 */
+/* 
+.navbars {
+    position: fixed;
+    width: 1500px !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbars ul li a {
+    color: #4d535c;
+    font: normal normal normal "microsoft yahei",
+        Arial,
+        sans-serif !important;
+} */
+
+/* 英雄首页 */
+.hero {
+    /* overflow: hidden; */
+    width: 14.875rem;
+    height: 28rem;
+    /* background-color: pink; */
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.hero .top h2 {
+    font-size: .725rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #000;
+    font-family: "microsoft yahei",
+        "Helvetica Neue",
+        Helvetica,
+        Roboto,
+        Arial,
+        sans-serif;
+}
+
+.top p {
+    display: block;
+    margin-top: .25rem;
+    font-size: .3rem;
+    color: #000;
+    font-family: "microsoft yahei",
+        "Helvetica Neue",
+        Helvetica,
+        Roboto,
+        Arial,
+        sans-serif;
+}
+
+/* 英雄模块 */
+.main {
+    /* overflow: hidden; */
+    width: 100%;
+    margin-top: .625rem;
+    /* background-color: royalblue; */
+}
+
+.main .nav {
+    width: 100%;
+    height: .5625rem;
+}
+
+.main .nav ul {
+    width: 100%;
+    height: .5625rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: seagreen; */
+
+}
+
+
+/* main顶部导航栏 */
+.nav ul li {
+    position: relative;
+    flex: 1;
+    height: .5625rem;
+    line-height: .5625rem;
+    border: none;
+    border-radius: .025rem;
+    text-align: center;
+    cursor: pointer;
+    /* margin-right: .0125rem; */
+    border: .00625rem solid rgba(0, 0, 0, .1);
+    /* background-color: rgba(0, 0, 0, .9); */
+}
+
+.nav li .text {
+    font-family: Futura,
+        "microsoft yahei",
+        arial,
+        sans-serif;
+    font-size: .2rem;
+    color: #1a325e;
+}
+
+.nav .nav_bgc1 {
+    background-color: #fff;
+}
+
+.nav .nav_bgc2 {
+    background-color: #fff;
+}
+
+.nav li .icon-shield {
+    display: block;
+    position: absolute;
+    left: 1.3125rem;
+}
+
+.nav li .icon-target {
+    display: block;
+    position: absolute;
+    top: .0125rem;
+    left: 1.3125rem;
+}
+
+.nav li .icon-plus1 {
+    display: block;
+    position: absolute;
+    top: .0125rem;
+    left: 1.3125rem;
+}
+
+.nav li .icon-shield::before {
+    font-family: "icomoon";
+    content: '\e9b4';
+    font-size: .2rem;
+    color: #1a325e;
+}
+
+.nav li .icon-target::before {
+    font-family: "icomoon";
+    content: '\e9b3';
+    font-size: .2rem;
+    color: #1a325e;
+}
+
+.nav li .icon-plus1::before {
+    font-family: "icomoon";
+    content: '\ea0a';
+    font-size: .2rem;
+    color: #1a325e;
+}
+
+
+/* 英雄界面 */
+.main .inner {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    margin-top: .375rem;
+    /* background-color: yellow; */
+
+}
+
+/* .innerno {
+    display: none;
+    color: #fff;
+} */
+
+/* 当前英雄高亮显示 */
+.shadow a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 57px 14px rgb(0 195 255 / 70%);
+}
+
+.shadow:hover a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 57px 14px transparent;
+}
+
+.shadow .hn {
+    background-color: #02c2fe;
+}
+
+.shadow .hn .heroname {
+    color: #fff;
+}
+
+/* 其他英雄灰色显示 */
+.unshadow a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+    opacity: 0.4;
+    z-index: 999;
+}
+
+.unshadow:hover a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 0;
+}
+
+/* 输出英雄切换效果 */
+.main .shuchu {
+    position: relative;
+    height: 24rem;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(5rem, 4rem)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.shuchu .shuchuhero1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 0.2s linear;
+}
+
+
+.shuchu .shuchuhero2 {
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    animation: move 0.2s linear;
+}
+
+.shuchu .shuchuhero3 {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    animation: move 0.2s linear;
+}
+
+.shuchu .shuchuhero4 {
+    position: absolute;
+    top: 0;
+    left: 7.5rem;
+    animation: move 0.2s linear;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(-10rem, 8rem)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.shuchu .shuchuhero5 {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    animation: move1 0.2s linear;
+}
+
+.shuchu .shuchuhero6 {
+    position: absolute;
+    top: 0;
+    left: 12.5rem;
+    animation: move1 0.2s linear;
+}
+
+.shuchu .shuchuhero7 {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    animation: move 0.2s linear;
+}
+
+.shuchu .shuchuhero8 {
+    position: absolute;
+    top: 4rem;
+    left: 2.5rem;
+    animation: move 0.2s linear
+}
+
+.shuchu .shuchuhero9 {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    animation: move 0.2s linear
+}
+
+.shuchu .shuchuhero10 {
+    position: absolute;
+    top: 4rem;
+    left: 7.5rem;
+    animation: move 0.2s linear
+}
+
+.shuchu .shuchuhero11 {
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+    animation: move1 0.2s linear
+}
+
+.shuchu .shuchuhero12 {
+    position: absolute;
+    top: 4rem;
+    left: 12.5rem;
+    animation: move1 0.2s linear
+}
+
+.shuchu .shuchuhero13 {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    animation: move 0.2s linear
+}
+
+.shuchu .shuchuhero14 {
+    position: absolute;
+    top: 8rem;
+    left: 2.5rem;
+    animation: move 0.2s linear
+}
+
+.shuchu .shuchuhero15 {
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+    animation: move 0.2s linear
+}
+
+.shuchu .shuchuhero16 {
+    position: absolute;
+    top: 8rem;
+    left: 7.5rem;
+    animation: move 0.2s linear
+}
+
+.shuchu .shuchuhero17 {
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+    animation: move1 0.2s linear
+}
+
+
+.shuchu .tankehero1 {
+    position: absolute;
+    top: 8rem;
+    left: 12.5rem;
+}
+
+.shuchu .tankehero2 {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+}
+
+.shuchu .tankehero3 {
+    position: absolute;
+    top: 12rem;
+    left: 2.5rem;
+}
+
+.shuchu .tankehero4 {
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+}
+
+.shuchu .tankehero5 {
+    position: absolute;
+    top: 12rem;
+    left: 7.5rem;
+}
+
+.shuchu .tankehero6 {
+    position: absolute;
+    top: 12rem;
+    left: 10rem;
+}
+
+.shuchu .tankehero7 {
+    position: absolute;
+    top: 12rem;
+    left: 12.5rem;
+}
+
+.shuchu .tankehero8 {
+    position: absolute;
+    top: 16rem;
+    left: 0;
+}
+
+.shuchu .zhiliaohero1 {
+    position: absolute;
+    top: 16rem;
+    left: 2.5rem;
+}
+
+.shuchu .zhiliaohero2 {
+    position: absolute;
+    top: 16rem;
+    left: 5rem;
+}
+
+.shuchu .zhiliaohero3 {
+    position: absolute;
+    top: 16rem;
+    left: 7.5rem;
+}
+
+.shuchu .zhiliaohero4 {
+    position: absolute;
+    top: 16rem;
+    left: 10rem;
+}
+
+.shuchu .zhiliaohero5 {
+    position: absolute;
+    top: 16rem;
+    left: 12.5rem;
+}
+
+.shuchu .zhiliaohero6 {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+}
+
+.shuchu .zhiliaohero7 {
+    position: absolute;
+    top: 20rem;
+    left: 2.5rem;
+}
+
+/* 治疗英雄切换效果 */
+.main .zhiliao {
+    position: relative;
+    height: 24rem;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(2.5rem, 16rem)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.zhiliao .zhiliaohero1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move2 0.2s linear;
+}
+
+.zhiliao .zhiliaohero2 {
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    animation: move2 0.2s linear;
+}
+
+.zhiliao .zhiliaohero3 {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    animation: move2 0.2s linear;
+}
+
+.zhiliao .zhiliaohero4 {
+    position: absolute;
+    top: 0;
+    left: 7.5rem;
+    animation: move2 0.2s linear;
+}
+
+.zhiliao .zhiliaohero5 {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    animation: move2 0.2s linear;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translate(-12.5rem, 20rem)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.zhiliao .zhiliaohero6 {
+    position: absolute;
+    top: 0;
+    left: 12.5rem;
+    animation: move3 0.2s linear;
+}
+
+.zhiliao .zhiliaohero7 {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    animation: move2 0.2s linear;
+}
+
+.zhiliao .tankehero1 {
+    position: absolute;
+    top: 4rem;
+    left: 2.5rem;
+}
+
+.zhiliao .tankehero2 {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+}
+
+.zhiliao .tankehero3 {
+    position: absolute;
+    top: 4rem;
+    left: 7.5rem;
+}
+
+.zhiliao .tankehero4 {
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+}
+
+.zhiliao .tankehero5 {
+    position: absolute;
+    top: 4rem;
+    left: 12.5rem;
+}
+
+.zhiliao .tankehero6 {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+}
+
+.zhiliao .tankehero7 {
+    position: absolute;
+    top: 8rem;
+    left: 2.5rem;
+}
+
+.zhiliao .tankehero8 {
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+}
+
+
+.zhiliao .shuchuhero1 {
+    position: absolute;
+    top: 8rem;
+    left: 7.5rem;
+}
+
+
+.zhiliao .shuchuhero2 {
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+}
+
+.zhiliao .shuchuhero3 {
+    position: absolute;
+    top: 8rem;
+    left: 12.5rem;
+}
+
+.zhiliao .shuchuhero4 {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+}
+
+.zhiliao .shuchuhero5 {
+    position: absolute;
+    top: 12rem;
+    left: 2.5rem;
+}
+
+.zhiliao .shuchuhero6 {
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+}
+
+.zhiliao .shuchuhero7 {
+    position: absolute;
+    top: 12rem;
+    left: 7.5rem;
+
+}
+
+.zhiliao .shuchuhero8 {
+    position: absolute;
+    top: 12rem;
+    left: 10rem;
+}
+
+.zhiliao .shuchuhero9 {
+    position: absolute;
+    top: 12rem;
+    left: 12.5rem;
+}
+
+.zhiliao .shuchuhero10 {
+    position: absolute;
+    top: 16rem;
+    left: 0;
+}
+
+.zhiliao .shuchuhero11 {
+    position: absolute;
+    top: 16rem;
+    left: 2.5rem;
+}
+
+.zhiliao .shuchuhero12 {
+    position: absolute;
+    top: 16rem;
+    left: 5rem;
+}
+
+.zhiliao .shuchuhero13 {
+    position: absolute;
+    top: 16rem;
+    left: 7.5rem;
+}
+
+.zhiliao .shuchuhero14 {
+    position: absolute;
+    top: 16rem;
+    left: 10rem;
+}
+
+.zhiliao .shuchuhero15 {
+    position: absolute;
+    top: 16rem;
+    left: 12.5rem;
+}
+
+.zhiliao .shuchuhero16 {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+}
+
+.zhiliao .shuchuhero17 {
+    position: absolute;
+    top: 20rem;
+    left: 2.5rem;
+}
+
+/* 重装英雄切换效果 */
+.main .zhongzhuang {
+    position: relative;
+    height: 24rem;
+}
+
+@keyframes move4 {
+    0% {
+        transform: translate(2.5rem, 4rem)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.zhongzhuang .tankehero1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move4 0.2s linear;
+}
+
+.zhongzhuang .tankehero2 {
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    animation: move4 0.2s linear;
+}
+
+.zhongzhuang .tankehero3 {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    animation: move4 0.2s linear;
+}
+
+.zhongzhuang .tankehero4 {
+    position: absolute;
+    top: 0;
+    left: 7.5rem;
+    animation: move4 0.2s linear;
+}
+
+.zhongzhuang .tankehero5 {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    animation: move4 0.2s linear;
+}
+
+@keyframes move5 {
+    0% {
+        transform: translate(-12.5rem, 8rem)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.zhongzhuang .tankehero6 {
+    position: absolute;
+    top: 0;
+    left: 12.5rem;
+    animation: move5 0.2s linear;
+}
+
+.zhongzhuang .tankehero7 {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    animation: move4 0.2s linear;
+}
+
+.zhongzhuang .tankehero8 {
+    position: absolute;
+    top: 4rem;
+    left: 2.5rem;
+    animation: move4 0.2s linear;
+}
+
+.zhongzhuang .shuchuhero1 {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+}
+
+
+.zhongzhuang .shuchuhero2 {
+    position: absolute;
+    top: 4rem;
+    left: 7.5rem;
+}
+
+.zhongzhuang .shuchuhero3 {
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+}
+
+.zhongzhuang .shuchuhero4 {
+    position: absolute;
+    top: 4rem;
+    left: 12.5rem;
+}
+
+.zhongzhuang .shuchuhero5 {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+}
+
+.zhongzhuang .shuchuhero6 {
+    position: absolute;
+    top: 8rem;
+    left: 2.5rem;
+}
+
+.zhongzhuang .shuchuhero7 {
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+
+}
+
+.zhongzhuang .shuchuhero8 {
+    position: absolute;
+    top: 8rem;
+    left: 7.5rem;
+}
+
+.zhongzhuang .shuchuhero9 {
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+}
+
+.zhongzhuang .shuchuhero10 {
+    position: absolute;
+    top: 8rem;
+    left: 12.5rem;
+}
+
+.zhongzhuang .shuchuhero11 {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+}
+
+.zhongzhuang .shuchuhero12 {
+    position: absolute;
+    top: 12rem;
+    left: 2.5rem;
+}
+
+.zhongzhuang .shuchuhero13 {
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+}
+
+.zhongzhuang .shuchuhero14 {
+    position: absolute;
+    top: 12rem;
+    left: 7.5rem;
+}
+
+.zhongzhuang .shuchuhero15 {
+    position: absolute;
+    top: 12rem;
+    left: 10rem;
+}
+
+.zhongzhuang .shuchuhero16 {
+    position: absolute;
+    top: 12rem;
+    left: 12.5rem;
+}
+
+.zhongzhuang .shuchuhero17 {
+    position: absolute;
+    top: 16rem;
+    left: 0;
+}
+
+.zhongzhuang .zhiliaohero1 {
+    position: absolute;
+    top: 16rem;
+    left: 2.5rem;
+
+}
+
+.zhongzhuang .zhiliaohero2 {
+    position: absolute;
+    top: 16rem;
+    left: 5rem;
+
+}
+
+.zhongzhuang .zhiliaohero3 {
+    position: absolute;
+    top: 16rem;
+    left: 7.5rem;
+
+}
+
+.zhongzhuang .zhiliaohero4 {
+    position: absolute;
+    top: 16rem;
+    left: 10rem;
+
+}
+
+.zhongzhuang .zhiliaohero5 {
+    position: absolute;
+    top: 16rem;
+    left: 12.5rem;
+
+}
+
+.zhongzhuang .zhiliaohero6 {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+}
+
+.zhongzhuang .zhiliaohero7 {
+    position: absolute;
+    top: 20rem;
+    left: 2.5rem;
+
+}
+
+/* 当前英雄高亮显示 */
+.inner .shadow a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 57px 14px rgb(0 195 255 / 70%);
+}
+
+.inner .shadow:hover a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 57px 14px transparent;
+}
+
+.inner .shadow .hn {
+    background-color: #02c2fe;
+}
+
+.inner .shadow .hn .heroname {
+    color: #fff;
+}
+
+/* 其他英雄灰色显示 */
+.inner .shadowno a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+    opacity: 0.4;
+    z-index: 999;
+}
+
+.inner .shadowno:hover a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 0;
+}
+
+
+
+.main .inner .portrait {
+    float: left;
+    width: 2.375rem;
+    height: 3.875rem;
+    background-image: url(../images/herobg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: .125rem;
+    margin-bottom: .125rem;
+    border: 2px solid rgba(255, 255, 255, .4);
+    transition: all 0.3s;
+}
+
+.main .inner .portrait:nth-child(6n) {
+    margin-right: 0;
+}
+
+.portrait a {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.portrait a img {
+    width: 100%;
+    height: 3.875rem;
+    background-size: cover;
+}
+
+/* .big {
+    width: 2.375rem !important;
+    height: 4rem !important;
+} */
+
+/* 英雄名字 */
+.portrait a .hn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.portrait a .hn .heroname {
+    display: block;
+    width: 100%;
+    height: .875rem;
+    line-height: .875rem;
+    font-size: .4rem;
+    font-family: "Big Noodle Too",
+        "microsoft yahei",
+        impact,
+        sans-serif;
+    font-style: italic;
+    color: #d0d0dc;
+    text-align: center;
+}
+
+/* 字体图标 */
+.portrait a .hn .icon-shield,
+.icon-target,
+.icon-plus1 {
+    display: block;
+    position: absolute;
+    top: .125rem;
+    left: .125rem;
+
+}
+
+.icon-shield::before {
+    font-family: "icomoon";
+    content: '\e9b4';
+    font-size: .2rem;
+    color: #fff;
+}
+
+.icon-target::before {
+    font-family: "icomoon";
+    content: '\e9b3';
+    font-size: .2rem;
+    color: #fff;
+}
+
+.icon-plus1::before {
+    font-family: "icomoon";
+    content: '\ea0a';
+    font-size: .2rem;
+    color: #fff;
+}
+
+/* 鼠标经过放大 */
+.portrait:hover {
+    transform: scale(1.13);
+    position: relative;
+    z-index: 1;
+}
+
+.portrait:hover .hn {
+    background-color: #fff;
+}
+
+.portrait:hover .hn span {
+    color: #1a325e !important;
+}
+
+.portrait:hover .icon-shield::before {
+    color: #1a325e;
+}
+
+.portrait:hover .icon-target::before {
+    color: #1a325e;
+}
+
+.portrait:hover .icon-plus1::before {
+    color: #1a325e;
+}

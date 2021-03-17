@@ -1,0 +1,801 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 80px;
+}
+
+/* header部分 开始*/
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 10.6125rem
+        /* 849/80 */
+    ;
+    /* background-color: cornflowerblue; */
+    overflow: hidden;
+    background: url(../images/bg.png) no-repeat 50% 50%;
+}
+
+.header .left {
+    float: left;
+    width: 6.7625rem
+        /* 541/80 */
+    ;
+    /* height: 5.5875rem/* 447/80 */
+    ;
+    /* background-color: brown; */
+    margin-top: 2.1875rem
+        /* 175/80 */
+    ;
+    margin-left: 2.475rem
+        /* 198/80 */
+    ;
+    /* margin: 0 auto; */
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.header .logo img {
+    /* display: block; */
+    width: 60%;
+    /* height: 100%; */
+}
+
+.header .left h2 {
+    display: inline-block;
+    width: 100%;
+    color: #b19031;
+    text-align: center;
+    font-size: .8rem
+        /* 64/80 */
+    ;
+    margin-top: .125rem
+        /* 10/80 */
+    ;
+    margin-bottom: .3125rem
+        /* 25/80 */
+    ;
+}
+
+.header .left .buy a {
+    display: block;
+    width: 4.5rem
+        /* 360/80 */
+    ;
+    height: .5375rem
+        /* 43/80 */
+    ;
+    background-color: #f89800;
+    font-size: .2625rem
+        /* 21/80 */
+    ;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #f89800;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header .left .buy a:hover {
+    background-color: #ffb033;
+    border-color: #ffb033;
+}
+
+.header .hero {
+    float: left;
+    width: 10.9375rem
+        /* 875/80 */
+    ;
+    margin-left: 1.675rem
+        /* 134/80 */
+    ;
+    margin-top: 1.425rem
+        /* 114/80 */
+    ;
+}
+
+.header .hero img {
+    width: 100%;
+}
+
+.header .vd {
+    position: absolute;
+    top: 4.6875rem
+        /* 375/80 */
+    ;
+    right: 10.875rem
+        /* 870/80 */
+    ;
+}
+
+.header .vd img {
+    width: 1.25rem
+        /* 100/80 */
+    ;
+    height: 1.25rem
+        /* 100/80 */
+    ;
+}
+
+.header .vd .vd-z {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 14%;
+    z-index: 9999;
+    width: 17.8375rem
+        /* 1427/80 */
+    ;
+    height: 10.025rem
+        /* 802/80 */
+    ;
+}
+
+.header .vd .vd-z video {
+    width: 100%;
+    height: 100%;
+}
+
+.mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+}
+
+.btn-close {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 230px;
+    width: .75rem
+        /* 60/80 */
+    ;
+    height: .75rem
+        /* 60/80 */
+    ;
+    /* background-color: #cd2706; */
+    z-index: 9999;
+    font-size: .75rem
+        /* 60/80 */
+    ;
+    color: #00c3ff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 100;
+}
+
+.close-bl {
+    color: #fff;
+}
+
+
+/* header部分 结束*/
+
+
+/* cow部分 开始 */
+
+.cow {
+    width: 100%;
+    height: 3.825rem
+        /* 306/80 */
+    ;
+    /* background-color: brown; */
+    overflow: hidden;
+    padding: .625rem
+        /* 50/80 */
+        0;
+}
+
+.cow .text {
+    width: 14.875rem
+        /* 1190/80 */
+    ;
+    height: 1.3rem
+        /* 104/80 */
+    ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cow .text h3 {
+    font-size: .3rem
+        /* 24/80 */
+    ;
+}
+
+.cow .text p {
+    font-size: .225rem
+        /* 18/80 */
+    ;
+    line-height: .325rem
+        /* 26/80 */
+    ;
+    display: block;
+    width: 9.375rem
+        /* 750/80 */
+    ;
+    margin: 0 auto;
+    margin-top: .15rem
+        /* 12/80 */
+    ;
+}
+
+.cow .text .unlock a {
+    display: block;
+    width: 3.75rem
+        /* 300/80 */
+    ;
+    height: .5375rem
+        /* 43/80 */
+    ;
+    background-color: #fff;
+    border: 3px solid #f89800;
+    margin: 0 auto;
+    font-size: .2625rem
+        /* 21/80 */
+    ;
+    margin-top: .25rem
+        /* 20/80 */
+    ;
+    color: #f89800;
+    font-weight: 700;
+}
+
+.cow .text .unlock a:hover {
+    color: #fff;
+    background-color: #ff9c00;
+    border: 3px solid #ff9c00;
+}
+
+
+/* cow部分 结束 */
+
+
+/* hilarity 开始 */
+
+.hilarity {
+    position: relative;
+    width: 23.775rem
+        /* 1902/80 */
+    ;
+    height: 15.25rem
+        /* 1220/80 */
+    ;
+    background-color: #eddc95;
+}
+
+.melee {
+    width: 100%;
+    height: 9.125rem
+        /* 730/80 */
+    ;
+    background: url(../images/乱斗v.jpg) no-repeat -270px;
+    background-size: cover;
+}
+
+.pattern {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18rem
+        /* 1440/80 */
+    ;
+    height: 13.8125rem
+        /* 1105/80 */
+    ;
+    /* background-color: blueviolet; */
+}
+
+.pattern h4 {
+    padding-top: .75rem
+        /* 60/80 */
+    ;
+    font-size: .3rem
+        /* 24/80 */
+    ;
+    color: #fff;
+    text-align: center;
+}
+
+.pattern p {
+    font-size: .8rem
+        /* 64/80 */
+    ;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 4.25rem
+        /* 340/80 */
+    ;
+}
+
+.play-method {
+    width: 100%;
+    height: 7.25rem
+        /* 580/80 */
+    ;
+    /* background-color: lawngreen; */
+}
+
+.play-method span {
+    display: block;
+    padding: .375rem
+        /* 30/80 */
+    ;
+}
+
+.play-method h5 {
+    color: #4b535d;
+    font-size: .3rem
+        /* 24/80 */
+    ;
+    line-height: .3375rem
+        /* 27/80 */
+    ;
+    text-align: center;
+}
+
+.play-method i {
+    display: block;
+    font-size: .225rem
+        /* 18/80 */
+    ;
+    line-height: .325rem
+        /* 26/80 */
+    ;
+    color: #212529;
+    line-height: .325rem
+        /* 26/80 */
+    ;
+    margin-top: .125rem
+        /* 10/80 */
+    ;
+}
+
+.play-method .method-1 {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    margin-right: .9rem
+        /* 72/80 */
+    ;
+}
+
+.play-method .method-1 .new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, .65);
+    border: 2px solid #f7cc73;
+    font-size: .16rem
+        /* 12.8/80 */
+    ;
+    border-radius: 3px;
+    color: #e7cd0a;
+    padding: .0375rem
+        /* 3/80 */
+        .0625rem
+        /* 5/80 */
+    ;
+    line-height: 1;
+}
+
+.play-method .method-1 .p-logo1 {
+    width: 100%;
+    height: 3.125rem
+        /* 250/80 */
+    ;
+    background: url(../upload/p1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.play-method .method-2 {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    margin-right: .9rem
+        /* 72/80 */
+    ;
+}
+
+.play-method .method-2 .p-logo2 {
+    width: 100%;
+    height: 3.125rem
+        /* 250/80 */
+    ;
+    background: url(../upload/p2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.play-method .method-3 {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.play-method .method-3 .p-logo3 {
+    width: 100%;
+    height: 3.125rem
+        /* 250/80 */
+    ;
+    background: url(../upload/p3.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/* hilarity 结束 */
+
+
+/* challenge部分 开始 */
+
+.challenge {
+    width: 23.775rem
+        /* 1902/80 */
+    ;
+    height: 11.1875rem
+        /* 895/80 */
+    ;
+    background-color: aqua;
+    background: url(../images/tzbg.jpg) no-repeat -3.75rem;
+    background-size: 59%;
+    overflow: hidden;
+}
+
+.challenge .hero-left {
+    position: relative;
+    float: left;
+    width: 13rem
+        /* 1040/80 */
+    ;
+    height: 11.1875rem
+        /* 895/80 */
+    ;
+    margin-right: .375rem
+        /* 30/80 */
+    ;
+}
+
+.challenge .hero-left div {
+    position: absolute;
+    left: -1040px;
+}
+
+.challenge .hero-left div:first-child {
+    left: 0;
+}
+
+.challenge .hero-left img {
+    width: 100%;
+}
+
+.challenge .weekly-right {
+    float: left;
+    width: 9.1875rem
+        /* 735/80 */
+    ;
+    /* margin-left: 50%; */
+    margin-top: 1.125rem
+        /* 90/80 */
+    ;
+}
+
+.challenge .weekly-right .hd {
+    position: relative;
+    color: #cd2706;
+    font-weight: 700;
+    font-size: .3rem
+        /* 24/80 */
+    ;
+    line-height: .3375rem
+        /* 27/80 */
+    ;
+    margin-bottom: .075rem
+        /* 6/80 */
+    ;
+}
+
+#fu {
+    position: relative;
+    top: -4px;
+    left: 0;
+    width: .3125rem
+        /* 25/80 */
+    ;
+    height: .3125rem
+        /* 25/80 */
+    ;
+}
+
+.challenge .weekly-right h1 {
+    height: 1.0625rem
+        /* 85/80 */
+    ;
+    font-size: .8rem
+        /* 64/80 */
+    ;
+    line-height: .75rem
+        /* 60/80 */
+    ;
+    font-weight: 400;
+    color: #4b535d;
+    font-style: italic;
+}
+
+.challenge .weekly-right .recommend {
+    width: 8.225rem
+        /* 658/80 */
+    ;
+    font-size: .225rem
+        /* 18/80 */
+    ;
+    line-height: .325rem
+        /* 26/80 */
+    ;
+}
+
+.tab {
+    width: 8.225rem
+        /* 658/80 */
+    ;
+    /* margin: 100px auto; */
+    margin-top: .375rem
+        /* 30/80 */
+    ;
+}
+
+.tab_list {
+    height: .675rem
+        /* 54/80 */
+    ;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+    border-bottom: 1px solid #979797;
+}
+
+.tab_list li {
+    float: left;
+    width: 1.3rem
+        /* 104/80 */
+    ;
+    height: .675rem
+        /* 54/80 */
+    ;
+    line-height: .675rem
+        /* 54/80 */
+    ;
+    /* padding: 
+    ; */
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .2625rem
+        /* 21/80 */
+    ;
+}
+
+.tab_list .current {
+    /* background-color: #c81623; */
+    color: #ff8900;
+    border-bottom: .05rem
+        /* 4/80 */
+        solid #ff8700;
+}
+
+.item_info {
+    padding: 20px 0 0 20px;
+}
+
+.item {
+    display: none;
+}
+
+.week-dates {
+    margin-top: .45rem
+        /* 36/80 */
+    ;
+    margin-bottom: .25rem
+        /* 20/80 */
+    ;
+}
+
+.week-dates-1 {
+    font-size: .2625rem
+        /* 21/80 */
+    ;
+    line-height: .3125rem
+        /* 25/80 */
+    ;
+    font-weight: 700;
+    padding-left: .375rem
+        /* 30/80 */
+    ;
+}
+
+.week-dates-2 {
+    font-size: .225rem
+        /* 18/80 */
+    ;
+    line-height: .325rem
+        /* 26/80 */
+    ;
+}
+
+.pack {
+    height: 5.25rem
+        /* 420/80 */
+    ;
+    width: 100%;
+    /* background-color: coral; */
+}
+
+.pack-1,
+.pack-2,
+.pack-3 {
+    width: 100%;
+    height: 1.5rem
+        /* 120/80 */
+    ;
+    margin-bottom: .375rem
+        /* 30/80 */
+    ;
+}
+
+.pack-pc {
+    float: left;
+}
+
+.pack-pc img {
+    width: 1.5rem
+        /* 120/80 */
+    ;
+    height: 1.5rem
+        /* 120/80 */
+    ;
+}
+
+.pack-text {
+    float: left;
+    margin: .4375rem
+        /* 35/80 */
+        0 0 .25rem
+        /* 20/80 */
+    ;
+}
+
+.pack-text-1 {
+    font-size: .3rem
+        /* 24/80 */
+    ;
+    line-height: .3375rem
+        /* 27/80 */
+    ;
+    color: #4b535d;
+    font-weight: 700;
+}
+
+.pack-text-2 {
+    font-size: .225rem
+        /* 18/80 */
+    ;
+    line-height: .325rem
+        /* 26/80 */
+    ;
+    color: #212529;
+}
+
+.com {
+    color: #ffb033;
+    border-bottom: .05rem
+        /* 4/80 */
+        solid #ff8700;
+}
+
+
+/* challenge部分 结束 */
+
+
+/* luck部分 开始 */
+
+.luck {
+    position: relative;
+    width: 100%;
+    height: 6rem
+        /* 480/80 */
+    ;
+    background: url(../images/goodluck.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    margin-top: .0375rem
+        /* 3/80 */
+    ;
+}
+
+.luck-text {
+    position: absolute;
+    top: 1.25rem
+        /* 100/80 */
+    ;
+    right: 3.125rem
+        /* 250/80 */
+    ;
+    width: 7.65rem
+        /* 612/80 */
+    ;
+    height: 3.5rem
+        /* 280/80 */
+    ;
+    /* background-color: brown; */
+}
+
+.luck-text h1 {
+    text-align: left;
+    color: #fff;
+    font-size: .8rem
+        /* 64/80 */
+    ;
+    line-height: .75rem
+        /* 60/80 */
+    ;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: .25rem
+        /* 20/80 */
+    ;
+}
+
+.luck-text .explain {
+    text-align: left;
+    font-size: .225rem
+        /* 18/80 */
+    ;
+    line-height: .325rem
+        /* 26/80 */
+    ;
+    color: #fff;
+}
+
+.luck-text .buy-btn a {
+    display: block;
+    width: 4.5rem
+        /* 360/80 */
+    ;
+    height: .5rem
+        /* 40/80 */
+    ;
+    margin-top: .375rem
+        /* 30/80 */
+    ;
+    text-align: center;
+    color: #fff;
+    background-color: #ff9c00;
+    font-size: .2625rem
+        /* 21/80 */
+    ;
+    line-height: .5rem
+        /* 40/80 */
+    ;
+    font-weight: 700;
+}
+
+.luck-text .buy-btn a:hover {
+    background-color: #ffb033;
+}
+
+
+/* luck部分 结束 */

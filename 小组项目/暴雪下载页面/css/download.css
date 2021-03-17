@@ -1,0 +1,1065 @@
+/* 清除默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body样式 */
+body {
+    min-width: 1400px;
+
+    height: 1400px;
+    background-image: url(../images/bg_body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+/* 设定版心 */
+.m {
+    width: 1400px;
+    margin: 0 auto;
+
+}
+
+/* 清除预设ul样式 */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 顶部导航栏 */
+.nav {
+
+    height: 40px;
+    background-image: url(../images/bg_body.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* border-bottom: 1px solid #29415d; */
+    /* background-color: aquamarine; */
+}
+
+/* 顶部导航栏左边样式 */
+.nav_top_left li:nth-child(1) {
+    height: 40px;
+    float: left;
+}
+
+/* 顶部导航栏左边图片 */
+.nav_top_left a img {
+    height: 40px;
+}
+
+/* 顶部导航栏左边文字样式 */
+.nav_top_left li:nth-child(2) a {
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #cdd2d9;
+}
+
+.nav_top_left li:nth-child(2) a:hover {
+    color: #fff;
+}
+
+/* 顶部导航栏右边文字样式 */
+.nav_top_right {
+    float: right;
+}
+
+.nav_top_right li {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #cdd2d9;
+}
+
+.nav_top_right li a {
+
+    color: #cdd2d9;
+}
+
+.nav_top_right li a:hover {
+    color: #fff;
+}
+
+/* 第一行最后的小箭头  */
+.nav_top_right li:nth-child(2) a::after {
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 15px;
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(135deg);
+}
+
+/* hover事件 */
+.nav_top_right li:nth-child(2):hover a::after {
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 20px;
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(315deg);
+}
+
+
+
+/* nav1登入框 */
+#hide_nav_one {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    z-index: 4;
+    width: 250px;
+    height: 203px;
+    border: 1px solid #8093a8;
+    border-top: 0px;
+    border-radius: 4px;
+    box-shadow: 1px 1px;
+    background-color: #232b3b;
+}
+
+.hide_nav_one_login {
+    width: 200px;
+    height: 50px;
+    margin: 20px auto 20px;
+    background-color: #006fb2;
+    color: #cce2f0;
+    font-size: 20px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.hide_nav_one_login:hover {
+    background-color: #007bc6;
+}
+
+/* 第二栏导航栏(带固定定位) */
+.nav2 {
+
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background-image: url(../images/bg_body.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    border-top: 1px solid #29415d;
+    border-bottom: 1px solid #29415d;
+    /* background-color: #032041; */
+}
+
+/* 第二行导航栏左边 */
+.nav_top_two_left {
+
+    float: left;
+    height: 50px;
+
+
+
+}
+
+.nav_top_two_left li {
+    float: left;
+}
+
+.nav_top_two_left li a {
+    position: relative;
+    float: left;
+    font-size: 16px;
+    line-height: 50px;
+    margin-right: 40px;
+    color: #cdd2d9;
+}
+
+/* 第一个图标 */
+.nav_top_two_left li:nth-child(1) a {
+    float: left;
+    font-size: 16px;
+    line-height: 45px;
+    margin-right: 10px;
+
+}
+
+.nav_top_two_left li:nth-child(1) a img {
+    height: 48px;
+}
+
+/* 第二个字 */
+.nav_top_two_left li:nth-child(3) a::before {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(135deg);
+}
+
+.nav_top_two_left li:nth-child(3):hover a::before {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(315deg);
+}
+
+/* 第三个字 */
+.nav_top_two_left li:nth-child(4) a::before {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(135deg);
+}
+
+.nav_top_two_left li:nth-child(4):hover a::before {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(315deg);
+}
+
+/* 第二行字hover变白 */
+.nav_top_two_left li a:hover {
+    color: #fff;
+}
+
+/* 图片高度 */
+.nav_top_two_left img {
+
+    height: 20px;
+}
+
+/* 第五个li盒子 */
+.nav_top_two_left li:nth-child(6) a {
+    display: inline-block;
+    margin-top: 10px;
+    width: 125px;
+    height: 30px;
+    font-weight: 800;
+    background-color: #006fb2;
+    color: #cce2f0;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.nav_top_two_left li:nth-child(6):hover a {
+    border: 1px solid #fff;
+    margin-top: 9px;
+
+}
+
+/* input框 */
+#search {
+    position: absolute;
+    width: 400px;
+    left: 825px;
+    top: 8px;
+    height: 35px;
+    background-color: #001732;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: .5px solid #263a51;
+}
+
+/* 第二行右边导航栏 */
+.nav_top_two_right {
+    float: right;
+}
+
+/* 第二行右边导航栏右边样式 */
+.nav_top_two_right li {
+    float: left;
+    border-left: 1px solid #263a51;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* 第二行右边导航栏右边第一个样式 */
+.nav_top_two_right li:nth-child(1) a {
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #cce2f0;
+
+}
+
+.nav_top_two_right li:nth-child(1):hover a {
+
+    color: #fff;
+
+}
+
+/* 第二行右边导航栏右边第二个样式 */
+.nav_top_two_right li:nth-child(2) a {
+
+    position: relative;
+    margin-right: 7px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #cce2f0;
+}
+
+.nav_top_two_right li:nth-child(2) a::before {
+    display: block;
+    position: absolute;
+    left: 120px;
+    top: 6px;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(135deg);
+}
+
+.nav_top_two_right li:nth-child(2):hover a {
+    color: #fff;
+}
+
+.nav_top_two_right li:nth-child(2):hover a::before {
+    display: block;
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    border-top: 1px solid #8093a8;
+    border-right: 1px solid #8093a8;
+    transform: rotate(315deg);
+}
+
+/* 轮播图准备样式 */
+.main {
+    /* margin-top: 10px; */
+    width: 100%;
+    /* height: 300px; */
+}
+
+.main img {
+
+    width: 100%;
+    height: 300px;
+}
+
+/* 修改swiper */
+.swiper-pagination-bullet {
+    width: 100px !important;
+    height: 5px !important;
+    border-radius: 10px !important;
+    background-color: #ccc !important;
+}
+
+.swiper-button-prev {
+    color: #ccc !important;
+}
+
+.swiper-button-next {
+    color: #ccc !important;
+}
+
+/* swiper样式 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* swiper样式 end*/
+
+/* 购买页面 */
+.buyitem {
+    position: relative;
+    margin-top: 51px;
+    width: 100%;
+    height: 650px;
+    border-top: 1px solid #8093a8;
+
+    background-repeat: no-repeat;
+    background-color: #111111;
+    background-size: cover;
+
+    border-radius: 4px;
+
+}
+
+.buyitem_img_box {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-image: url(../images/prod-thumb.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #6c697c;
+    background-size: contain;
+
+}
+
+.buyitem_img_box div {
+    position: absolute;
+}
+
+.buyitem_img_1 {
+    /* display: none; */
+    width: 100%;
+    height: 650px;
+    background-position: -221px 0px;
+    background-image: url(../images/main.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.buyitem_img_2 {
+    display: none;
+    width: 100%;
+    height: 650px;
+    background-position: -221px 0px;
+    background-image: url(../images/main2.jpg);
+}
+
+.buyitem_img_3 {
+    display: none;
+    width: 100%;
+    height: 650px;
+    background-position: -148px 0px;
+    background-image: url(../images/main3.jpg);
+}
+
+
+
+/* 购买页面右边盒子 */
+.buyitem_right {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    width: 500px;
+    height: 670px;
+    z-index: 2;
+    background-color: #1d2635;
+    border-top: 1px solid #8093a8;
+    border-radius: 8px;
+}
+
+.buyiteam_box_top {
+    /*此处有塌陷问题 */
+    margin-top: 10px;
+
+    padding-top: 10px;
+
+}
+
+.buyiteam_box_top_icon {
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+/* 右边盒子的暗黑3图标 */
+.buyiteam_box_top_icon img {
+
+    width: 100px;
+    height: 100px;
+}
+
+/* 文字 */
+.buyiteam_box_text {
+    margin-top: 30px;
+
+    height: 100px;
+}
+
+/* 第一行文字 */
+.buyiteam_box_text h2 {
+
+    color: #cce2f0;
+    font-weight: 400;
+    font-size: 24px;
+
+
+}
+
+/* 第二行文字 */
+.buyiteam_box_text span {
+    font-size: 14px;
+    color: #cce2f0;
+}
+
+/* 剩余下架时间 盒子*/
+.timeout {
+    background-color: #fecc00;
+    height: 40px;
+    text-align: center;
+}
+
+/* 剩余下架时间文字 */
+.timeout p {
+    font-size: 20px;
+    color: #372c00;
+    line-height: 40px;
+
+}
+
+/* 三个iteam盒子 */
+#buyitem_box_three {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+
+    /* background-color: tan; */
+}
+
+/* flex布局 */
+#buyitem_box_three li {
+    position: relative;
+    flex: 1;
+    height: 100px;
+    cursor: pointer;
+    /* background-color: tomato; */
+    border-bottom: 1px solid #171d26;
+
+}
+
+
+.new_item_class {
+    border-left: 4px solid #00aeff;
+    background-color: #1f394d;
+}
+
+/* 图片item盒子 */
+#buyitem_box_three li span {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 12px;
+    width: 135px;
+    height: 75px;
+    background-color: chartreuse;
+}
+
+/* item图片 */
+#buyitem_box_three li span img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 文字 */
+#buyitem_box_three li h4 {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 162px;
+    margin-left: 20px;
+
+    font-size: 22px;
+    text-align: center;
+    color: #e4e5e7;
+    font-weight: 300;
+}
+
+/* 文字 */
+#buyitem_box_three li p {
+    position: absolute;
+    top: 50px;
+    left: 188px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #cacccf;
+    font-weight: 300;
+}
+
+/* 文字事件 */
+#buyitem_box_three li:hover h4,
+#buyitem_box_three li:hover,
+p {
+    color: #fff;
+
+}
+
+/* 立即购买盒子 */
+.buy_come {
+    margin: 20px auto 0;
+    width: 400px;
+    height: 75px;
+    background-color: #0e86ca;
+    font-size: 25px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 75px;
+    color: #cacccf;
+    cursor: pointer;
+}
+
+.buy_come a {
+    color: #cacccf;
+}
+
+.buy_come:hover {
+    color: #fff;
+    background-color: #00aeff;
+}
+
+.buy_come:hover a {
+    color: #fff;
+}
+
+/* 心愿单 */
+.buyitem_love {
+    position: absolute;
+    left: 180px;
+    bottom: 20px;
+    width: 200px;
+    height: 40px;
+
+    color: #03a1ed;
+    font-size: 20px;
+}
+
+.buyitem_love a {
+    text-align: center;
+    color: #03a1ed;
+    font-size: 20px;
+}
+
+.buyitem_love:hover a {
+    color: #fff;
+}
+
+/* 心愿单end */
+/* 介绍界面 */
+.introduction {
+    height: 480px;
+    width: 100%;
+    background-image: url(../images/bg_body.png);
+    background-position: bottom;
+    border-bottom: 1px solid #26466a;
+    ;
+}
+
+/* 介绍页面左边的盒子 */
+.introduction_left {
+    float: left;
+    padding: 50px;
+    width: 900px;
+    height: 450px;
+    /* background-color: coral; */
+}
+
+/* 大标题 */
+.introduction_left h1 {
+    font-weight: 400;
+    font-size: 35px;
+    color: #fff;
+}
+
+/* 段落 */
+.introduction_left p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* 段落内置2个a标签 */
+.introduction_left a {
+    color: #0291ff;
+}
+
+/* a标签hover事件 */
+.introduction_left a:hover {
+    color: #fff;
+}
+
+/* 介绍页面右边盒子 */
+.introduction_right {
+    float: right;
+    margin-top: 80px;
+    margin-right: 50px;
+    height: 400px;
+    width: 450px;
+}
+
+.introduction_right li {
+    list-style: disc;
+    margin: 10px;
+    color: #808299;
+    font-size: 13px;
+}
+
+/* 介绍页面end */
+/* 第三导航栏 */
+.nav_three {
+    height: 50px;
+    background-image: url(../images/bg_body.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+/* 第三导航栏左边 */
+.nav_three_left li {
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #cdd2d9;
+}
+
+.nav_three_left li a {
+    color: #99a6b4;
+}
+
+.nav_three_left li a:hover {
+    color: #fff;
+}
+
+/* 第三导航栏结束 */
+.banner {
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+    background-image: url(../images/bg_body.png);
+    background-size: cover;
+}
+
+/* flex布局 */
+.banner li {
+    position: relative;
+    flex: 1;
+    border-top: 1px solid #26466a;
+
+}
+
+/* 第一行文字 */
+.banner h1 {
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* 第二行段落 */
+.banner p {
+    position: absolute;
+    left: 70px;
+    top: 125px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* 第一个盒子 */
+.banner_onebox {
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 50px;
+    width: 280px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.4s;
+    /* background-color: tomato; */
+    /* background-image: url(../images/card_1.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.banner_onebox:hover {
+    transform: scale(1.1);
+}
+
+.banner_onebox_1 {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/card_1.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.banner_onebox_3 {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/card_3.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_onebox_6 {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/card_6.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .banner_onebox h2 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner .banner_onebox p {
+    position: absolute;
+    top: 280px;
+    left: 18px;
+    color: #969ba1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner .banner_onebox i {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* 第一个盒子end */
+
+/* 第二个盒子 */
+.banner_twobox {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 280px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.4s;
+    /* background-color: tomato; */
+}
+
+.banner_twobox:hover {
+    transform: scale(1.1);
+}
+
+
+.banner_onebox_2 {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/card_2.jpg);
+    background-position: -30px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_onebox_4 {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/card_4.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_onebox_7 {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/card_7.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.banner .banner_twobox h2 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner .banner_twobox p {
+    position: absolute;
+    top: 280px;
+    left: 18px;
+    color: #969ba1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner .banner_twobox i {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* 第三个盒子 */
+.banner_threebox {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 280px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.4s;
+    /* background-color: tomato; */
+}
+
+.banner_threebox:hover {
+    transform: scale(1.1);
+}
+
+.banner_onebox_5 {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/card_5.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner .banner_threebox h2 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner .banner_threebox p {
+    position: absolute;
+    top: 280px;
+    left: 18px;
+    color: #969ba1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner .banner_threebox i {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#btn_top {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 10px;
+    color: #fff;
+    z-index: 999;
+
+
+}

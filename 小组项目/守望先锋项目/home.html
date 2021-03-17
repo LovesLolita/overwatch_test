@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>《守望先锋》官方网站 </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="copyright" content="©2021 暴雪娱乐有限公司版权所有 上海网之易网络科技发展有限公司">
+    <link rel="shortcut icon" href="./icon.ico" type="image/x-icon" />
+    <meta name="description"
+        content="《守望先锋》是暴雪出品的首款团队射击游戏，现已正式来到中国。游戏以近未来地球为背景，来自全球的超级英雄们将使用自己独特的能力在战场上厮杀，带给玩家顶尖的射击体验。">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/home.js"></script>
+</head>
+
+<body>
+    <!-- nav  模块 -->
+    <div class="navbars">
+        <a href="home.html">
+            <div class="logo">
+            </div>
+        </a>
+        <ul>
+            <li> <a href="hero.html">英雄</a> </li>
+            <li></li>
+            <li> <a href="map.html">地图</a> </li>
+
+            <li></li>
+            <li> <a href="activity.html">活动</a> </li>
+
+            <li></li>
+            <li> <a href="s.html">视频图片</a> </li>
+
+            <li></li>
+            <li> <a href="download.html">下载</a> </li>
+            <li></li>
+            <li> <a href="electronic-sports.html">电子竞技</a> </li>
+            <!-- <li> 电子竞技 </li> -->
+
+            <li></li>
+            <li class="buy"><a href="download.html">购买</a> </li>
+
+        </ul>
+    </div>
+
+    <!-- header模块 -->
+    <section class="home-header">
+        <!-- 视频 -->
+        <div class="video">
+            <video src="./video/header.webm" autoplay muted loop></video>
+        </div>
+        <!-- 图片 -->
+        <div class="home-header-img">
+            <img src="https://overwatch.nosdn.127.net/1/assets/img/pages/home/logo_new_0321.png">
+        </div>
+        <!-- 按钮 -->
+        <div class="home-header-btn">
+            <span class="introduce">游戏介绍</span>
+            <span class="buy">立即购买</span>
+        </div>
+
+        <!-- 模态框 -->
+        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <h4>游戏介绍</h4>
+                    <em id="close" type="button" class="close" aria-label="Close"><span aria-hidden="true"> &times;</em>
+                    <video src="./video/headermo.mp4" autoplay muted controls class="introduce-video"></video>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 新闻模块 -->
+    <section class="home-new">
+        <div class="home-news w">
+            <h1>新闻公告<small> NEWS BULLETIN</small></h1>
+            <!-- 图片 -->
+            <div class="home-news-conter">
+                <div><img src="./images/home-new1.jpg" alt="">
+                    <h1> <span>购15游戏货币赠1份传奇补给和5份补给</span></h1>
+                </div>
+                <div><img src="./images/home-new2.jpg" alt="">
+                    <h1> <span>铁坂|全新死斗地图现已上线</span></h1>
+                </div>
+                <div><img src="./images/home-new3.jpg" alt="">
+                    <h1> <span>《守望先锋》5折特惠并支持花呗分期</span></h1>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="home-new-btn">查看所有新闻</div>
+        </div>
+    </section>
+    <!-- 活动模块 -->
+    <section class="home-act">
+        <div>
+            <h1>周年纪念典藏礼包</h1>
+            <p>用丰厚的宝藏来纪念暴雪在这三十年间所创造的众多世界，探索的全新宇宙和分享的无数史诗级游戏体验吧！购买周年纪念典藏礼包，即可获赠《守望先锋》游戏内物品。为了领悟三十周年的精神，你可以通过雷诺哈特传奇皮肤化身吉姆·雷诺，使用全新的专属头像和喷漆，并用黄金补给来扩充你的收藏。
+            </p>
+            <p>*购买周年纪念典藏礼包后，需要关注暴雪游戏服务中心微信公众号，以便领取《守望先锋》游戏内物品！</p>
+            <span>了解详情</span>
+        </div>
+    </section>
+    <!-- puc购游戏币模块 -->
+    <section class="home-puc">
+        <div>
+            <h3>15游戏货币（赠送1份传奇补给和5份补给）</h3>
+            <p>想不想扩充一下你的个性化收藏？现在购买15游戏货币，即可立即获赠1份传奇补给和5份补给*。</p>
+            <p>*每个账号只能购买一次。仅适用于PC版。</p>
+            <span>购买游戏币（赠送补给）</span>
+        </div>
+    </section>
+    <!-- 英雄hero 模块 -->
+    <section class="home-hero">
+        <!-- 文字标题部分 -->
+        <div>
+            <h1>各具特色的英雄</h1>
+            <p>不论喜欢哪种游戏方式，你总能找到适合自己玩法的英雄。<br>
+                掌握他们独特的技能玩法，享受《守望先锋》的无穷乐趣！</p>
+
+        </div>
+        <!-- 主体 -->
+        <div class="home-hero-content">
+            <!-- 文字部分 -->
+            <div class="hero-word">
+                <div>
+                    <h3>西格玛</h3>
+                    <p>性格古怪的天体物理学家，在一场轨道空间站中的实验事故之后，被改造成了活体兵器。</p>
+                </div>
+                <div>
+                    <h3>破坏球</h3>
+                    <p>驾驶这台滚动式坦克的是一只经过基因改造的仓鼠，他来自月球基地。</p>
+                </div>
+                <div>
+                    <h3>D.Va</h3>
+                    <p>一名前职业玩家，而现在则利用自己的技巧驾驶一台尖端机甲保卫国家。</p>
+                </div>
+                <div>
+                    <h3>奥丽莎</h3>
+                    <p>维护努巴尼秩序并保护努巴尼人民的维和机器人。</p>
+                </div>
+                <div>
+                    <h3>莱因哈特</h3>
+                    <p>一名属于过去的勇士，时刻铭记着骑士的信条：无畏、公正、勇敢。</p>
+                </div>
+                <div>
+                    <h3>路霸</h3>
+                    <p>一名残暴的杀手，因残忍和肆意破坏而臭名昭著。</p>
+                </div>
+                <div class="block">
+                    <h3>温斯顿</h3>
+                    <p>一只经过基因改造，拥有高等智慧的大猩猩，也是一位出色的科学家和代表着人类潜力的勇士。</p>
+                </div>
+                <div>
+                    <h3>查莉娅</h3>
+                    <p>世界上最强壮的女性之一。为了保卫祖国，毅然放弃了个人荣誉。</p>
+                </div>
+                <div>
+                    <h3>回声</h3>
+                    <p>“回声”是一台可以自行进化的机器人，装载了能够高速自我调整的人工智能，代表着科技的最尖端水平。</p>
+                </div>
+                <div>
+                    <h3>艾什</h3>
+                    <p>肆虐美国西南部、臭名昭著的死局帮的首脑。</p>
+                </div>
+                <div>
+                    <h3>末日铁拳</h3>
+                    <p>一位利用个人头脑、魅力和蛮力来创建一个更强大世界的战术家。</p>
+                </div>
+                <div>
+                    <h3>堡垒</h3>
+                    <p>一名可以切换形态的机器人，为自然着迷而探索世界，同时也对人类保持着戒心。</p>
+                </div>
+                <div>
+                    <h3>源氏</h3>
+                    <p>一名致命的半机械忍者，通过他的机械躯体寻得了身心的和谐。</p>
+                </div>
+                <div>
+                    <h3>半藏</h3>
+                    <p>一名强大而致命的弓箭大师。</p>
+                </div>
+                <div>
+                    <h3>狂鼠</h3>
+                    <p>一名致命的半机械忍者，通过他的机械躯体寻得了身心的和谐。</p>
+                </div>
+                <div>
+                    <h3>麦克雷</h3>
+                    <p>一名亡命天涯的神枪手，以自己的方式伸张正义。</p>
+                </div>
+                <div>
+                    <h3>美</h3>
+                    <p>一名能够操控天气，为了保护环境而选择战斗的科学家。</p>
+                </div>
+                <div>
+                    <h3>法老之鹰</h3>
+                    <p>一名恪守岗位的战士，用实验性的“猛禽”作战服确保天空的安全。</p>
+                </div>
+                <div>
+                    <h3>死神</h3>
+                    <p>一名无情的杀手，一直在追杀前守望先锋的特工们。</p>
+                </div>
+                <div>
+                    <h3>士兵：76</h3>
+                    <p>一名试图自己将守望先锋敌人绳之于法的独行侠。</p>
+                </div>
+                <div>
+                    <h3>黑影</h3>
+                    <p>一位天才基因科学家，无视道德的束缚，一心追求科学发现。 </p>
+                </div>
+                <div>
+                    <h3>秩序之光</h3>
+                    <p>一名通过控制高强度光束，将世界改造成她心目中完美、有序的模样的光子建筑师。</p>
+                </div>
+                <div>
+                    <h3>托比昂</h3>
+                    <p>一名天才工程师，可以在战场上打造武器系统。</p>
+                </div>
+                <div>
+                    <h3>猎空</h3>
+                    <p>一名前守望先锋特工，同时也是可以穿梭时间的充满正义的冒险家。</p>
+                </div>
+                <div>
+                    <h3>黑百合</h3>
+                    <p>一名完美的杀手：耐心、果断、无情。没有任何情感且事后毫无悔意。</p>
+                </div>
+                <div>
+                    <h3>巴蒂斯特</h3>
+                    <p>一位配备了新型治疗设备的精英战地医疗兵。</p>
+                </div>
+                <div>
+                    <h3>安娜</h3>
+                    <p>守望先锋的创始成员之一，“起死回生”重返战场保护亲人和朋友。</p>
+                </div>
+                <div>
+                    <h3>布里吉塔</h3>
+                    <p>一位渴望冒险，希望惩强扶弱的重装战士。
+
+                    </p>
+                </div>
+                <div>
+                    <h3>卢西奥</h3>
+                    <p>一位国际名人，通过音乐和巡演激发社会正能量。</p>
+                </div>
+                <div>
+                    <h3>天使</h3>
+                    <p>一名集顶尖的治疗者、出色的科学家和坚定的和平主义者于一身的守护天使。 </p>
+                </div>
+                <div>
+                    <h3>伊莫拉</h3>
+                    <p>一位天才基因科学家，无视道德的束缚，一心追求科学发现。
+
+                    </p>
+                </div>
+
+                <div>
+                    <h3>禅雅塔</h3>
+                    <p>一位游走于世界寻找灵魂升华之道的机械僧侣。
+
+                    </p>
+                </div>
+            </div>
+            <!-- 图片部分 -->
+            <div class="hero-img">
+                <!-- <img src="./images/02.png" alt=""> -->
+                <ul class="hero-imgs">
+                    <li><img src="./images/xigema-bj.png" alt=""></li>
+                    <li><img src="./images/pohuaiqiu-bj.png" alt=""></li>
+                    <li><img src="./images/d.va-bj.png" alt=""></li>
+                    <li><img src="./images/aolisha-bj.png" alt=""></li>
+                    <li><img src="./images/laiyinsite-bj.png" alt=""></li>
+                    <li><img src="./images/luba-bj.png" alt=""></li>
+                    <li class="block"><img src="./images/wensidun-bj.png" alt=""></li>
+                    <li><img src="./images/chaliya-bj.png" alt=""></li>
+                    <li><img src="./images/huisheng-bj.png" alt=""></li>
+                    <li><img src="./images/aishe-bg.png" alt=""></li>
+                    <li><img src="./images/moritiequan-bj.png" alt=""></li>
+                    <li><img src="./images/baolei-bj.png" alt=""></li>
+                    <li><img src="./images/yuanshi-bj.png" alt=""></li>
+                    <li><img src="./images/banzang-bj.png" alt=""></li>
+                    <li><img src="./images/kuangshu-bj.png" alt=""></li>
+                    <li><img src="./images/maikelei-bj.png" alt=""></li>
+                    <li><img src="./images/mei-bj.png" alt=""></li>
+                    <li><img src="./images/falaozhiying-bj.png" alt=""></li>
+                    <li><img src="./images/sishen-bj.png" alt=""></li>
+                    <li><img src="./images/shibing76-bj.png" alt=""></li>
+                    <li><img src="./images/heiying-bj.png" alt=""></li>
+                    <li><img src="./images/zhixuzhiguang-bj.png" alt=""></li>
+                    <li><img src="./images/tuobiang-bj.png" alt=""></li>
+                    <li><img src="./images/liekong-bj.png" alt=""></li>
+                    <li><img src="./images/heibaihe-bj.png" alt=""></li>
+                    <li><img src="./images/badisite-bj.png" alt=""></li>
+                    <li><img src="./images/anna-bj.png" alt=""></li>
+                    <li><img src="./images/bulijita-bj.png" alt=""></li>
+                    <li><img src="./images/luxiao-bj.png" alt=""></li>
+                    <li><img src="./images/tianshi-bj.png" alt=""></li>
+                    <li><img src="./images/moyila-bj.png" alt=""></li>
+                    <li><img src="./images/chanyata-bj.png" alt=""></li>
+
+                </ul>
+            </div>
+            <!-- 头像head -->
+            <div class="hero-heads w">
+                <ul class="hero-heads-ul">
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/xigema.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            西格玛
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/pohuaiqiu-t.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            破坏球
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/dva-t.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            D.va
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/aolisha.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            奥丽莎
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/laiyinhate.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            莱因哈特
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/luba.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            路霸
+                        </span>
+                    </li>
+
+                    <li class="active">
+                        <div class="hero-head">
+                            <img src="./images/wensidun.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            温斯顿
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/chaliya-t.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            查莉娅
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/huisheng.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            回声
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/aishe.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            爱什
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/moretiequan.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            末日铁拳
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/baolei.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            堡垒
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/yuanshi.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            源氏
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/banzang.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            半藏
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/kuangshu.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            狂鼠
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/maikelei.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            麦克雷
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/mei.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            美
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/falaozhiying.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            法老之鹰
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/sishen.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            死神
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/shibing76.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            士兵：76
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/heiying.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            黑影
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/zhixuzhiguang.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            秩序之光
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/tuobiang.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            托比昂
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/liekong-t.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            猎空
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/heibaihe.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            黑百合
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/babisite.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            巴蒂斯特
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/anna.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            安娜
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/bulijita.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            布里吉塔
+                        </span>
+                    </li>
+
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/luxiao.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            卢西奥
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/tianshi.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            天使
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/moyila.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            莫伊拉
+                        </span>
+                    </li>
+                    <li>
+                        <div class="hero-head">
+                            <img src="./images/chanyata.png" alt="">
+                        </div>
+                        <span class="hero-name">
+                            禅雅塔
+                        </span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--开始守望模块home-Start-->
+    <section class="home-start">
+        <div class="home-start-word">
+            <h1>开始守望</h1>
+            <p>加入终极团队射击游戏，为未来而战</p>
+            <span>立即购买</span>
+        </div>
+
+        <div class="home-start-img"></div>
+    </section>
+    <!-- 返回顶部按钮 -->
+    <div class="gotop">
+        TOP
+    </div>
+    <!-- foot 模块 -->
+    <div class="foot">
+        <div class="w footer">
+            <!-- 客服 反馈 加入 -->
+            <div class="foot_cs">
+                <a href="javascript:;">
+                    <span>在线客服</span>
+                </a>
+                <a href="javascript:;">
+                    <span>反馈</span>
+                </a>
+                <a href="javascript:;">
+                    <span>加入我们</span>
+                </a>
+            </div>
+            <!-- 暴雪战网  网易链接 -->
+            <div class="foot_left">
+                <a target="_blank" href="https://www.battlenet.com.cn/" class="logo_bz"></a><a target="_blank"
+                    href="http://www.163.com/" class="logo_ne"></a>
+            </div>
+            <!-- 右侧文字模块 -->
+            <div class="foot_right">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">隐私 </a>
+                        ｜
+                    </li>
+                    <li><a href="javascript:;">法律条款 </a>
+                        ｜
+                    </li>
+                    <li><a href="javascript:;">API </a>
+                        ｜
+                    </li>
+                </ul>
+                <br>
+                <p>©2021 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 | 新广出审[2016]378号</p> <br>
+
+                <p>文网游进字[2016]0025号 |
+                    <a href="javascript:;">沪网文号〔2017〕9633-727号 </a>|
+                    <a href="javascript:;">增值电信业务经营许可证编号：B2－20080012 </a>|
+                    <a href="javascript:;">沪ICP备：沪B2－20080012</a>
+                </p>
+
+                <p>互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号 | <a href="javascript:;">上海市网络游戏行业自律公约</a></p>
+
+                <p>
+                    <a href="javascript:;"> <img src="./images/1.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/2.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/3.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/5.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/4.png" alt=""> </a>
+
+                    <span>&nbsp;| &nbsp; 适龄提示：适合13岁及以上使用</span>
+                    <a href="javascript:;"> 家长监护工程</a>
+                    <em>|</em>
+                    <a href="javascript:;">网上有害信息专区</a>
+                </p>
+            </div>
+
+            <!-- footer 底部-->
+            <div class="foot_bottom">
+                <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+                <p>
+                    健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

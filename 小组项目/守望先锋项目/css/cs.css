@@ -1,0 +1,158 @@
+.fa {
+    background-color: #484748;
+    height: 40px;
+    position: relative;
+}
+
+.bx {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    background: url(../image/1_tm_overwatch_media_bg-tablet-a74bf293a3.png)no-repeat center /cover !important;
+    ;
+}
+
+.logo {
+    display: inline-block;
+    background: url(../image/tubiao.png);
+    height: 40px;
+    width: 62px;
+    background-repeat: no-repeat;
+    background-position: -18px -75px;
+}
+
+.fa div {
+    float: left;
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 40px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.game {
+    color: #fff;
+
+}
+
+
+body {}
+
+h1 {
+
+    -webkit-font-smoothing: antialiased;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 31px;
+    line-height: 32px;
+    color: #4b535d;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.fath {
+    width: 1400px;
+    /* height: ; */
+}
+
+.t1 {
+    display: inline-block;
+    position: relative;
+    height: 339px;
+    width: 605px;
+    background-color: aqua;
+    top: 25%;
+    left: 12%;
+
+}
+
+
+.t1 img {
+    height: 339px;
+    width: 605px;
+}
+
+.t2 {
+    display: inline-block;
+    position: relative;
+    height: 339px;
+    width: 605px;
+    background-color: aqua;
+    top: 25%;
+    left: 20%;
+
+
+}
+
+.t2 img {
+    height: 339px;
+    width: 605px;
+}
+
+h1 {
+    -webkit-font-smoothing: antialiased;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 38px;
+    line-height: 27px;
+    color: #4b535d;
+    display: inline-block;
+    position: relative;
+    left: -169px;
+    top: 9px;
+}
+
+.w {
+    width: 1600px;
+    position: relative;
+    height: 45px;
+
+}
+
+
+
+.w .sy {
+    position: absolute;
+    color: #f06414;
+    font-size: 21px;
+    right: -116px;
+    top: 5px;
+}
+
+.sp1 {
+    width: 320px;
+    height: 180px;
+}
+
+
+.video {
+    padding: 0 170px;
+}
+
+.video li {
+    display: inline-block;
+    margin: 0 5px;
+
+
+}
+
+.yy {
+    -webkit-font-smoothing: antialiased;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 38px;
+    line-height: 27px;
+    color: #4b535d;
+
+}
+
+.yyt {
+    height: 284px;
+    height: 284px;
+}

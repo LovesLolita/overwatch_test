@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./common.html">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <script src="./js/jquery.min.js"></script>
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/list.js"></script>
+
+
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/list.css">
+</head>
+
+<body>
+    <!-- nav  模块 -->
+    <div class="navbars">
+        <a href="home.html">
+            <div class="logo">
+            </div>
+        </a>
+        <ul>
+            <li> <a href="hero.html">英雄</a> </li>
+            <li></li>
+            <li> <a href="map.html">地图</a> </li>
+
+            <li></li>
+            <li> <a href="activity.html">活动</a> </li>
+
+            <li></li>
+            <li> <a href="s.html">视频图片</a> </li>
+
+            <li></li>
+            <li> <a href="download.html">下载</a> </li>
+            <li></li>
+            <li> <a href="electronic-sports.html">电子竞技</a> </li>
+            <li></li>
+            <li class="buy"><a href="download.html">购买</a> </li>
+
+        </ul>
+    </div>
+
+    <!-- 头部视频播放区域 -->
+    <div class="play">
+        <!-- 插件 -->
+        <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video id="v1" autoplay loop muted>
+                        <source src="./video/1.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video id="v1" autoplay loop muted>
+                        <source src="./video/2.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video id="v1" autoplay loop muted>
+                        <source src="./video/3.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video id="v1" autoplay loop muted>
+                        <source src="./video/4.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video id="v1" autoplay loop muted>
+                        <source src="./video/5.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video id="v1" autoplay loop muted>
+                        <source src="./video/6.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <ul class="swiper-pagination swiper-pagination1">
+                <div class="style-blue swiper-fun">机甲：推进器</div>
+            </ul>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <h1>D.Va</h1>
+        <!-- <ul>
+            <li><a href="javaScript:;"><img src="loads/1.png" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="loads/4.png" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="loads/5.png" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="loads/6.png" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="loads/7.png" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="loads/8.png" alt=""></a></li>
+        </ul> -->
+    </div>
+
+    <!-- 主体区域 -->
+    <div class="main">
+        <!-- 视频背景 -->
+        <video id="v1" autoplay loop muted>
+            <source src="./video/2.1.mp4" type="video/mp4" />
+        </video>
+        <div class="v1-1" style="display: none;"></div>
+        <!-- tab栏 -->
+        <div class="tab">
+            <ul>
+                <li class="tab-st lis">概况</li>
+                <li class="tab-story lis">故事</li>
+            </ul>
+            <div class="tab-bd">
+                <!-- 概况栏 -->
+                <div class="speak">
+                    <div class="hero-top">
+                        <div class="hero-type">
+                            <h3 class="style-blue">角色类型</h3>
+                            <h2>重装</h2>
+                        </div>
+                        <div class="hero-hard">
+                            <h3 class="style-blue">难度</h3>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star special"></span>
+                        </div>
+                        <p class="hero-detail-description">D.Va拥有一部强大的机甲，它具有两台全自动的近距离聚变机炮、可以使机甲飞跃敌人或障碍物的推进器、
+                            还有可以抵御来自正面的远程攻击的防御矩阵。</p>
+                    </div>
+                    <!-- 分割线 -->
+                    <hr class="tab-separator">
+                    <!-- 技能 -->
+                    <div class="hero-bott">
+                        <h3 class="style-blue">技能</h3>
+                        <div class="ability">
+                            <div class="fl pic">
+                                <div class="pic-min">
+                                </div>
+                            </div>
+                            <div class="fl skill">
+                                <h4 class="h5">机甲：推进器</h4>
+                                <p>D.Va的机甲可以飞向空中。当加速器启动时，D.Va可以向前飞行。她可以改变飞行方向或撞开前方的敌人。.Va的移动速度。</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <div class="fl pic">
+                                <div class="pic-min">
+                                </div>
+                            </div>
+                            <div class="fl skill">
+                                <h4 class="h5">机甲：防御矩阵</h4>
+                                <p>D.Va可以激活正前方的目标锁定矩阵，挡住前方射来的飞射物。</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <div class="fl pic">
+                                <div class="pic-min">
+                                </div>
+                            </div>
+                            <div class="fl skill">
+                                <h4 class="h5">机甲：推进器</h4>
+                                <p>D.Va的机甲可以飞向空中。当加速器启动时，D.Va可以向前飞行。她可以改变飞行方向或撞开前方的敌人。.Va的移动速度。</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <div class="fl pic">
+                                <div class="pic-min">
+                                </div>
+                            </div>
+                            <div class="fl skill">
+                                <h4 class="h5">机甲：推进器</h4>
+                                <p>D.Va的机甲可以飞向空中。当加速器启动时，D.Va可以向前飞行。她可以改变飞行方向或撞开前方的敌人。.Va的移动速度。</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <div class="fl pic">
+                                <div class="pic-min">
+                                </div>
+                            </div>
+                            <div class="fl skill">
+                                <h4 class="h5">机甲：推进器</h4>
+                                <p>D.Va的机甲可以飞向空中。当加速器启动时，D.Va可以向前飞行。她可以改变飞行方向或撞开前方的敌人。.Va的移动速度。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 故事栏 -->
+                <div class="story">
+                    <div class="story-head">
+                        <h3 class="style-blue">简介</h3>
+                        <ul id="name">
+                            <li>全称：宋哈娜，年龄：19岁</li>
+                            <li>职业：（前）职业玩家，机甲驾驶员</li>
+                            <li>行动基地：韩国，釜山</li>
+                            <li>隶属：韩国陆军特别机动部队</li>
+                        </ul>
+                        <h4 class="style-blue story-game">“玩游戏就是要赢。”</h4>
+                        <p>D.Va曾是一名职业玩家，而现在则利用自己的技巧驾驶一台尖端机甲保卫国家。</p>
+                        <p>二十年前，韩国遭到一台从东海出现的巨型机甲怪兽的攻击。这台怪物在被击退前对多个沿海城市造成了毁灭性的破坏。为了应对这一威胁，韩国政府部署了一支机械化无人机部队“MEKA”，用以应对未来的智能机械威胁、保卫城市。
+                        </p>
+                        <p>随着一系列袭击事件的不断发生，韩国政府最担心的事情还是发生了。每过几年，那台巨型机械怪兽就会从海中出现袭击韩国和邻国。这台智能机械可以从每一次的遭遇战中学习，使用新武器和能力并且以不同形态出现。尽管韩国每次都能成功将其击退，但这台智能机械并未被彻底摧毁。
+                        </p>
+                        <p>随着智能机械不断进化，它最终干扰了MEKA的无人机控制网络，迫使军方派驾驶员驾驶这些机甲。由于难以找到合适的候选人，政府开始向那些拥有足以操控机甲尖端武器系统的必要反应和本能的国内职业玩家寻求帮助，其中就包括顶尖玩家之一的“D.Va”宋哈娜。作为一名为了获胜不惜一切代价的精英玩家，D.Va从来都不会对对手表现出丝毫的仁慈。
+                        </p>
+                        <p>D.Va将这次新任务视为一款全新的游戏，无所畏惧地和其他MEKA机甲冲向战场，随时准备保卫自己的国家。最近，她开始向她的粉丝直播战斗行动，而这也让她成为了世界巨星。</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end -->
+    <!-- 视频图片 -->
+    <div class="inner">
+        <h2 class="inner-title">视频图片</h2>
+        <ul class="inner-div">
+            <li class="inner-box one">
+                <a href="javaScript:;" class="a">
+                    <div class="inner-box-bottom">壁纸：D.Va</div>
+                </a>
+            </li>
+            <li class="inner-box " style="background: url(./images/b-2.jpg)">
+                <a href="javaScript:;" class="a">
+                    <div class="inner-box-bottom">游戏截图：D.Va</div>
+                </a>
+            </li>
+            <li class="inner-box " style="background: url(./images/b-3.jpg)">
+                <a href="javaScript:;" class="a">
+                    <div class="inner-box-bottom">游戏截图：D.Va</div>
+                </a>
+            </li>
+            <li class="inner-box " style="background: url(./images/b-4.jpg)">
+                <a href="javaScript:;" class="a">
+                    <div class="inner-box-bottom">游戏截图：D.Va</div>
+                </a>
+            </li>
+            <li class="inner-box shows" style="background: url(./images/b-5.jpg);display: none">
+                <a href="javaScript:;" class="a">
+                    <div class="inner-box-bottom">游戏截图：D.Va</div>
+                </a>
+            </li>
+            <li class="inner-box shows" style="background: url(./images/b-6.jpg);display: none;">
+                <a href="javaScript:;" class="a">
+                    <div class="inner-box-bottom">原画：D.Va</div>
+                </a>
+            </li>
+        </ul>
+        <div class="inner-top-md">
+            <a href="javaScript:;">加载更多</a>
+        </div>
+
+    </div>
+    <!-- 模态框 -->
+    <div class="lightbox-container">
+        <div class="lightbox-title">壁纸</div>
+        <div class="lightbox-clo ">
+            <span type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+        </div>
+        <div class="mask">
+            <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/f-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/f-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/f-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/f-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/f-5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/b-6.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination2"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 英雄展示 -->
+    <!-- <div class="heros-display">
+        <h1 class="heros-choice">请选择一名英雄</h1>
+        <div class="hero-type-container">1</div>
+        <div class="hero-type-container">1</div>
+        <div class="hero-type-container">1</div>
+    </div> -->
+
+    <!-- 返回顶部 -->
+    <a href="javaScrirt:;" id="goback">Top</a>
+    <!-- 尾部 -->
+    <div class="foot">
+        <div class="w footer">
+            <!-- 客服 反馈 加入 -->
+            <div class="foot_cs">
+                <a href="javascript:;">
+                    <span>在线客服</span>
+                </a>
+                <a href="javascript:;">
+                    <span>反馈</span>
+                </a>
+                <a href="javascript:;">
+                    <span>加入我们</span>
+                </a>
+            </div>
+            <!-- 暴雪战网  网易链接 -->
+            <div class="foot_left">
+                <a target="_blank" href="https://www.battlenet.com.cn/" class="logo_bz"></a><a target="_blank"
+                    href="http://www.163.com/" class="logo_ne"></a>
+            </div>
+            <!-- 右侧文字模块 -->
+            <div class="foot_right">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">隐私 </a>
+                        ｜
+                    </li>
+                    <li><a href="javascript:;">法律条款 </a>
+                        ｜
+                    </li>
+                    <li><a href="javascript:;">API </a>
+                        ｜
+                    </li>
+                </ul>
+                <br>
+                <p>©2021 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 | 新广出审[2016]378号</p> <br>
+
+                <p>文网游进字[2016]0025号 |
+                    <a href="javascript:;">沪网文号〔2017〕9633-727号 </a>|
+                    <a href="javascript:;">增值电信业务经营许可证编号：B2－20080012 </a>|
+                    <a href="javascript:;">沪ICP备：沪B2－20080012</a>
+                </p>
+
+                <p>互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号 | <a href="javascript:;">上海市网络游戏行业自律公约</a></p>
+
+                <p>
+                    <a href="javascript:;"> <img src="./images/1.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/2.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/3.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/5.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/4.png" alt=""> </a>
+
+                    <span>&nbsp;| &nbsp; 适龄提示：适合13岁及以上使用</span>
+                    <a href="javascript:;"> 家长监护工程</a>
+                    <em>|</em>
+                    <a href="javascript:;">网上有害信息专区</a>
+                </p>
+            </div>
+
+            <!-- footer 底部-->
+            <div class="foot_bottom">
+                <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+                <p>
+                    健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

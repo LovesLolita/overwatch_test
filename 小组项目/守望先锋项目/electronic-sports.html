@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《守望先锋》电子竞技</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/electronic-sports.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/timeTo.css">
+    <script src="js/jquery.time-to.min.js"></script>
+
+    <script src="js/electronic-sports.js"></script>
+
+</head>
+
+<body>
+    <!-- nav  模块 -->
+    <div class="navbars">
+        <a href="home.html">
+            <div class="logo">
+            </div>
+        </a>
+        <ul>
+            <li> <a href="hero.html">英雄</a> </li>
+            <li></li>
+            <li> <a href="map.html">地图</a> </li>
+
+            <li></li>
+            <li> <a href="activity.html">活动</a> </li>
+
+            <li></li>
+            <li> <a href="s.html">视频图片</a> </li>
+
+            <li></li>
+            <li> <a href="download.html">下载</a> </li>
+            <li></li>
+            <li class="active1"> <a href="electronic-sports.html">电子竞技</a> </li>
+            <li></li>
+            <li class="buy"><a href="download.html">购买</a> </li>
+
+        </ul>
+    </div>
+
+
+    <!-- 视频模块 -->
+    <div class="main-video">
+        <h1>《守望先锋》电子竞技</h1>
+        <!-- 显示图片 -->
+        <div class="img-box">
+            <video src="video/电子竞技.mp4" poster="images/img-box.png"></video>
+        </div>
+
+        <!-- 视频模态框 -->
+        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <!-- 点击播放后显示 -->
+                    <div class="video-box">
+                        <h4>职业之路 2018 | 《守望先锋》电子竞技</h4>
+                        <em id="close" type="button" class="close close-video" aria-label="Close"><span
+                                aria-hidden="true"> &times;</em>
+                        <video src="video/电子竞技.mp4" id="ele-video" controls autoplay muted loop></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 倒计时模块 -->
+    <section class="time-box">
+        <div class="title">
+            <h2><s>2021</s>赛季<em>概况</em></h2>
+        </div>
+        <div class="info">
+            <div class="time-progress clearfix">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="month clearfix">
+                <ul>
+                    <li>五月锦标赛</li>
+                    <li>六月争霸赛</li>
+                    <li>夏季挑战赛</li>
+                    <li>倒计时杯</li>
+                    <li>季后赛</li>
+                    <li>总决赛</li>
+                </ul>
+            </div>
+
+            <div class="time-area clearfix">
+                <ul>
+                    <li>四月-五月</li>
+                    <li>五月-六月</li>
+                    <li>六月-七月</li>
+                    <li>七月-八月</li>
+                    <li>八月-九月</li>
+                    <li>九月-十月</li>
+                </ul>
+            </div>
+        </div>
+        <div class="time">
+            <span class="time-span">
+                <strong>赛季倒计时</strong>
+            </span>
+            <!-- <div id="countDown"></div>
+            <a href="javascript:;">查看公告 ></a> -->
+            <div id="countdown" class="time-div"></div>
+            <p class="time-p">
+                <a href="javascript:;">谁是最后的英雄，一起来战吧！！！</a> </p>
+        </div>
+    </section>
+
+
+    <!-- 手风琴模块 -->
+    <section>
+        <ul id="pathtopro" class="clearfix">
+            <li class="li-active">
+                <!-- <div class="box"> -->
+                <div class="small small-active"><i></i></div>
+                <div class="big" style="display: block;">
+                    <h4>守望先锋公开争霸赛</h4>
+                    <p class="text">
+                        《守望先锋公开争霸赛》欢迎任何竞技等级的玩家，目前你可以选择韩国、中国、澳大利亚、南美、北美、欧洲，以及亚太地区开始你的征程。如果你热爱电子竞技，这是你在系统化的比赛中一展身手的好机会！
+                    </p>
+                    <a href="javascript:;">查看《守望先锋公开争霸赛》<i></i></a>
+                </div>
+                <i class="arrow"></i>
+                <!-- </div> -->
+            </li>
+            <li>
+                <!-- <div class="box"> -->
+                <div class="small"><i></i></div>
+                <div class="big">
+                    <h4>守望先锋公开争霸赛</h4>
+                    <p class="text">
+                        《守望先锋公开争霸赛》欢迎任何竞技等级的玩家，目前你可以选择韩国、中国、澳大利亚、南美、北美、欧洲，以及亚太地区开始你的征程。如果你热爱电子竞技，这是你在系统化的比赛中一展身手的好机会！
+                    </p>
+                    <a href="javascript:;">查看《守望先锋公开争霸赛》<i></i></a>
+                </div>
+                <i class="arrow"></i>
+                <!-- </div> -->
+            </li>
+            <li>
+                <!-- <div class="box"> -->
+                <div class="small"><i></i></div>
+                <div class="big">
+                    <h4>守望先锋公开争霸赛</h4>
+                    <p class="text">
+                        《守望先锋公开争霸赛》欢迎任何竞技等级的玩家，目前你可以选择韩国、中国、澳大利亚、南美、北美、欧洲，以及亚太地区开始你的征程。如果你热爱电子竞技，这是你在系统化的比赛中一展身手的好机会！
+                    </p>
+                    <a href="javascript:;">查看《守望先锋公开争霸赛》<i></i></a>
+                </div>
+                <i class="arrow"></i>
+                <!-- </div> -->
+            </li>
+            <li>
+                <!-- <div class="box"> -->
+                <div class="small"><i></i></div>
+                <div class="big">
+                    <h4>守望先锋公开争霸赛</h4>
+                    <p class="text">
+                        《守望先锋公开争霸赛》欢迎任何竞技等级的玩家，目前你可以选择韩国、中国、澳大利亚、南美、北美、欧洲，以及亚太地区开始你的征程。如果你热爱电子竞技，这是你在系统化的比赛中一展身手的好机会！
+                    </p>
+                    <a href="javascript:;">查看《守望先锋公开争霸赛》<i></i></a>
+                </div>
+                <!-- </div> -->
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- 守望先锋世界杯 -->
+    <section>
+        <div class="worldcup">
+            <div class="image">
+                <img src="images/worldcup_logo.png" alt="">
+            </div>
+            <div class="textbox">
+                <h2>守望先锋世界杯</h2>
+                <p>
+                    《守望先锋世界杯》汇集了全球各个国家和地区代表队，而社区是推动这场电竞盛宴的关键。玩家投票选出代表委员会之后，再由委员会选拔组成国家和地区最强战队的选手阵容。代表队伍一路过关斩将，最终在暴雪嘉年华上演巅峰对决！
+                </p>
+                <a href="javascript:;">查看《守望先锋世界杯》<i></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 页面底部 -->
+    <div class="foot">
+        <div class="w footer">
+            <!-- 客服 反馈 加入 -->
+            <div class="foot_cs">
+                <a href="javascript:;">
+                    <span>在线客服</span>
+                </a>
+                <a href="javascript:;">
+                    <span>反馈</span>
+                </a>
+                <a href="javascript:;">
+                    <span>加入我们</span>
+                </a>
+            </div>
+            <!-- 暴雪战网  网易链接 -->
+            <div class="foot_left">
+                <a target="_blank" href="https://www.battlenet.com.cn/" class="logo_bz"></a><a target="_blank"
+                    href="http://www.163.com/" class="logo_ne"></a>
+            </div>
+            <!-- 右侧文字模块 -->
+            <div class="foot_right">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">隐私 </a>
+                        ｜
+                    </li>
+                    <li><a href="javascript:;">法律条款 </a>
+                        ｜
+                    </li>
+                    <li><a href="javascript:;">API </a>
+                        ｜
+                    </li>
+                </ul>
+                <br>
+                <p>©2021 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 | 新广出审[2016]378号</p> <br>
+
+                <p>文网游进字[2016]0025号 |
+                    <a href="javascript:;">沪网文号〔2017〕9633-727号 </a>|
+                    <a href="javascript:;">增值电信业务经营许可证编号：B2－20080012 </a>|
+                    <a href="javascript:;">沪ICP备：沪B2－20080012</a>
+                </p>
+
+                <p>互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号 | <a href="javascript:;">上海市网络游戏行业自律公约</a></p>
+
+                <p>
+                    <a href="javascript:;"> <img src="./images/1.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/2.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/3.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/5.png" alt=""> </a>
+                    <a href="javascript:;"> <img src="./images/4.png" alt=""> </a>
+
+                    <span>&nbsp;| &nbsp; 适龄提示：适合13岁及以上使用</span>
+                    <a href="javascript:;"> 家长监护工程</a>
+                    <em>|</em>
+                    <a href="javascript:;">网上有害信息专区</a>
+                </p>
+            </div>
+
+            <!-- footer 底部-->
+            <div class="foot_bottom">
+                <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+                <p>
+                    健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 返回顶部 -->
+    <div class="top">TOP</div>
+</body>
+
+
+</html>
